@@ -1,0 +1,141 @@
+\documentclass[a4paper, 11pt, titlepage]{article}
+% paquete para las tildes
+\usepackage[utf8]{inputenc}
+% paquete para el idioma
+\usepackage[english,spanish]{babel}
+% paquete para las tablas
+\usepackage{array}
+% multirow para las tablas
+\usepackage{multirow}
+% paquete para las imágenes
+\usepackage{graphicx}
+%paquete para que ponga las imágnes en donde uno quiere
+\usepackage{float}
+%ponerle las urls a las referencias
+\usepackage{url}
+% Manejo de autores
+\usepackage{authblk}
+
+\begin{document}
+% generates the title
+\begin{center}
+	\large{\textbf{PA141-06}}\\
+	\large{DESARROLLO DE UN MODELO CONCEPTUAL DE INTEGRACIÓN ENTRE LA MINERÍA DE
+PROCESOS Y LA INNOVACIÓN DE PROCESOS}\\
+	\vspace{7 cm} % Vertical space
+	\large{YURI MILENA MORENO TRIANA}\\
+	\vspace{7 cm} % Vertical space
+	\large{PONTIFICIA UNIVERSIDAD JAVERIANA}\\
+	\large{FACULTAD DE INGENIERIA}\\
+	\large{MAESTRÍA EN INGENIERÍA INDUSTRIAL}\\
+	\large{BOGOTÁ, D.C.}\\
+	\large{2015}\\
+\end{center}
+\thispagestyle{empty} % No page number on title page.
+\newpage
+\begin{center}
+	\normalsize{PA141-06}\\
+	\normalsize{DESARROLLO DE UN MODELO CONCEPTUAL DE INTEGRACIÓN ENTRE LA MINERÍA DE
+PROCESOS Y LA INNOVACIÓN DE PROCESOS}\\
+	\vspace{2 cm} % Vertical space
+	\normalsize{\textbf{Autor:}}\\
+	\normalsize{Yuri Milena Moreno Triana}\\
+	\vspace{3 cm} % Vertical space
+	\normalsize{TRABAJO DE GRADO REALIZADO PARA CUMPLIR UNO }\\
+	\normalsize{DE LOS REQUISITOS PARA OPTAR AL TITULO DE}\\
+	\normalsize{MAGÍSTRA EN INGENIERÍA INDUSTRIAL}\\
+	\vspace{3 cm} % Vertical space
+	\normalsize{\textbf{Director}}\\
+	\normalsize{Ing. Santiago Aguirre Mayorga PhD}\\
+	
+	\vspace{2 cm} % Vertical space
+	\normalsize{PONTIFICIA UNIVERSIDAD JAVERIANA}\\
+	\normalsize{FACULTAD DE INGENIERIA}\\
+	\normalsize{MAESTRÍA EN INGENIERÍA INDUSTRIAL}\\
+	\normalsize{BOGOTÁ, D.C.}\\
+	\normalsize{2015}\\
+\end{center}
+\thispagestyle{empty} % No page number on title page.
+\newpage
+
+\newpage
+\thispagestyle{empty} % No page number on title page.
+\tableofcontents % Always compile twice if you have changed much
+\thispagestyle{empty} % No page number on title page.
+\newpage
+\thispagestyle{empty} % No page number on title page.
+\listoffigures
+\newpage
+\thispagestyle{empty} % No page number on title page.
+\listoftables
+\newpage
+\begin{center}
+	\large{\textbf{ABSTRACT}}\\
+\end{center}
+Pendiente
+
+\begin{center}
+	\large{\textbf{RESUMEN}}\\
+\end{center}
+En el proyecto se pretende desarrollar un modelo que integre técnicas, de dos campos que están involucrados en la inteligencia y desarrollo empresarial, que son: la minería de procesos y la innovación de procesos. Ambos campos están dedicados a la mejora de procesos la primera actua sobre archivos de
+registros y la segunda sobre ----- 
+
+Para realizar esta tarea se combinarán dos modelos....
+
+El resultado será un modelo compuesto ...
+
+\textbf{''Palabras claves''}
+
+Minería de datos, Minería de procesos, Innovación de procesos
+
+\thispagestyle{empty} % No page number on title page.
+\newpage
+\thispagestyle{empty} % No page number on title page.
+
+\newpage
+\section{PLANTEAMIENTO DEL PROBLEMA} \label{sec:Planteamiento}
+
+Desde el surgimiento de disciplinas como BPM\footnote{Business Process Management} a finales de la década de los 80, las organizaciones se han centrado cada vez más en sus procesos de negocio con el propósito de mejorar la operación y reducir los costos; partiendo de la definición de proceso de negocio como un grupo de tareas relacionadas que en conjunto crean valor para el cliente interno o externo\cite{hammer_reengineering_2006}.
+
+Para mejorar y apoyar los procesos de negocio, muchas organizaciones han instalado sistemas de información, incluyen sistemas de Workflow Management (WFM), planificación de recursos empresariales (ERP), Customer Relation Management (CRM), entre otros. Sin embargo uno de los principales problemas de estos sistemas de información, es que requieren el diseño explícito que representen los procesos de negocio de la organización \cite{van_der_aalst_workflow_2003}. Diseñar correctamente estos modelos de proceso requiere mucho conocimiento del negocio y reunirlo puede tomar mucho tiempo, además, en la práctica, estos modelos por lo general se definen por lo que los funcionarios piensan que se debe hacer y no lo que realmente se hace.
+
+Aquí es donde la minería procesos entra en juego, en primera medida, la minería de procesos es una disciplina que tiene como objetivo descubrir, monitorear y mejorar procesos a través de la extracción de conocimiento de los eventos registrados en los sistemas de información \cite{van_der_aalst_process_2012}, aplicando  técnicas de minería de datos con el fin de mejorar los procesos, así se puede evidenciar cómo se ejecuta realmente el proceso, logrando llegar a un modelo real, determinar si el proceso cumple con la documentación establecida para comparar con los procedimientos documentados y determinar si algún estándar no se está cumpliendo \cite{rozinat_process_2010}.
+
+A través de la aplicación de técnicas de minería de datos se puede construir una red para analizar la interacción entre las personas que pueden demorar en la ejecución de un proceso \cite{van_der_aalst_process_2012}. Del mismo modo se pueden identificar cuellos de botella, monitorear la productividad del personal, incluso predecir el tiempo de ciclo de un proceso. Así la minería de procesos es por lo tanto una disciplina reciente que se encuentra entre la minería de datos por un lado y entre el modelamiento y análisis de procesos por otro \cite{van_der_aalst_process_2012}.
+
+Existen estudios, casos, aplicaciones y desarrollos al respecto, como también implementación de herramientas que soportan el análisis de los datos extractados de los procesos de negocio desde la perspectiva de minería de procesos. Por ejemplo, en el proceso analizado en \cite{fong_data_2002} se alcanzó una mejora en el servicio al cliente, mientras en \cite{ho_development_2007} se consiguió simplificar el flujo de trabajo para garantizar así que los plazos de entrega fueran cada vez más cortos, esto a través de la combinación de diversas metodologías de mejoramiento continuo. Esto muestra que es un tema que está tomando gran fuerza por los resultados obtenidos y las amplias oportunidades en la academia para generar conocimiento mediante investigaciones. Esto se evidencia al observar las fechas en las cuales se han realizado las publicaciones que corresponden a años recientes.
+
+Por otro lado la innovación de procesos es la introducción de cambios significativos en las técnicas, los métodos, los materiales y/o el software, y tiene por objeto la disminución de costos, la mejora de la calidad, o la producción o distribución de nuevos productos, la innovación en procesos es un esfuerzo consiente dirigido y controlado, enfocado a mejorar drásticamente el desempeño de un proceso(Hernández-Valdez, 2010). -PENDIENTE VALIDAR LA CITA-
+
+Las empresas han encaminado sus esfuerzos a la generación de nuevos productos y procesos como consecuencia de su gestión de innovación, lo que les ha permitido generar cambios organizacionales y estrategias de mercado, que se han convertido en una ventaja competitiva clave para su mantenimiento y crecimiento; el cual es posible gracias a la capacidad de adaptación a las nuevas situaciones que surgen en su entorno y al desarrollo de tecnologías que requieren cortos períodos de implementación; al igual que el desarrollar un control efectivo sobre sus productos y tecnologías claves (Ochoa, Valdes y Quevedo, 2007)PENDIENTE VALIDAR LA CITA.
+
+Cabe la pena resaltar que las empresas innovan para mejorar sus resultados, bien aumentando la demanda o bien aumentando la demanda o bien reduciendo los constos, como se menciona en el Manual de Oslo \footnote{Guía para la recogida e interpretación de datos sobre la innovación. Grupo Tragsa, 3a edición}. Asímismo, se menciona que se innova para defender la posición actual con relación a los competidores y para obtener nuevas ventajas competitivas, como por ejemplo, imponiendo normas técnicas más rigurosas para los productos que produce (Lagunas y Cariño, 2007). Así pues la innovación trae consigo la implementación de una reestructuración organizativa con la presencia de una cultura innovadora que genere un retorno sostenido de la inversión, sea en capital humano, capital físico, capital tecnológico y/o capital organizativo PENDIENTE CITA. Es así como la gestión de la innovación traerá consigo para las organizaciones beneficios como la mejora de las actividades de la organización, el incremento de la competitividad de la organización a medio y largo plazo, una mayor integración de los procesos de Gestión Empresarial con su estrategia, la eficiente explotación del conocimiento de la organización, la sistematización de la incorporación de nuevos conocimientos en procesos y productos y la satisfacción de
+las expectativas futuras de los clientes PENDIENTE CITA Teniendo en cuenta lo anterior se pretende responder a la pregunta:
+¿Cómo las técnicas de minería de procesos pueden aportar hallazgos relevantes que se
+conviertan en oportunidades de innovación de procesos?
+
+\newpage
+\section{OBJETIVOS} \label{sec:introduction}
+\subsection{Objetivo general}
+
+Diseñar un modelo conceptual para la integración de la minería de procesos con la innovación en procesos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{BP,Innovacion,PM,PMI}{}
+
+\end{document}
